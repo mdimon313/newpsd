@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap');
+
+/*
+font-family: 'Raleway', sans-serif;
+*/
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+section {
+	padding: 80px 0;
+}
+.container {
+	max-width: 1170px;
+	margin: auto;
+	padding: 0 15px;
+}
+ul {
+	list-style: none;
+}
+a, a:focus, a:hover {
+	text-decoration: none;
+	color: #333;
+	transition: all .4s ease;
+}
+.row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.col-3 {
+	width: 33.33%;
+	padding: 0 15px;
+}
+.col-12 {
+	width: 100%;
+	padding: 0 15px;
+}
+.mb-3 {
+	margin-bottom: 48px;
+}
+.mb-4 {
+	margin-bottom: 64px;
+}
+
+/*============= START HEADER STYLE ===========*/
+
+.header {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	/*background: rgba(0,0,0,0.3);*/
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav .logo h2 {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 23px;
+	color: #66697e;
+}
+.nav .logo h2 span {
+	color: #000;
+	font-weight: 200;
+	font-size: 32px;
+	margin-left: 5px;
+}
+
+.nav ul {
+	display: flex;
+	align-items: center;
+}
+.nav ul li a {
+	display: block;
+	color: #66697e;
+	margin-left: 30px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+/*============= BANNER ===============*/
+.banner {
+	padding: 0;
+}
+.banner-bg {
+	width: 100%;
+	position: relative;
+}
+.banner-bg img {
+	width: 100%;
+	height: 100%;
+}
+.banner-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.banner-content {
+	text-align: center;
+}
+.banner-content h1 {
+	font-size: 45px;
+	line-height: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.banner-content p {
+	color: #fff;
+	line-height: 33px;
+	font-size: 18px;
+	font-family: 'Raleway' sans-serif;
+	font-weight: 200;
+}
+.button {
+	width: 200px;
+	height: 47px;
+	line-height: 45px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background-color: #e84545;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	cursor: pointer;
+	user-select: none;
+}
+
+/*=========== FEATURES ===========*/
+
+.feature-single-box {
+	overflow: hidden;
+}
+.feature-single-box .image {
+	width: 80px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.feature-single-box .feature-detailes {
+	text-align: center;
+	padding: 0 5px;
+}
+.feature-single-box .feature-detailes h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.feature-single-box .feature-detailes p {
+	color: #7f7f7f;
+	line-height: 25px;
+}
+
+/*============= DOWNLOAD =============*/
+.download-contant {
+	overflow: hidden;
+	text-align: center;
+}
+.download-contant h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+	margin-bottom: 16px;
+	color: #000;
+	text-transform: capitalize;
+}
+.download-contant p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 36.8px;
+}
+button.download-btn {
+	width: 280px;
+}
+/*============== FOOTER ===============*/
+.footer {
+	background: #3A3E64;
+	padding-top: 60px;
+}
+.foot-single-box {
+	overflow: hidden;
+}
+.foot-single-box .foot-head {
+	margin-bottom: 16px;
+}
+.foot-single-box .foot-head h3 {
+	text-transform: uppercase;
+	color: #fff;
+	font-family: 'Raleway' sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+}
+.foot-single-box .foot-discription {
+	color: #fff;
+	text-align: center;
+}
+.foot-single-box .foot-discription p {
+	color: #9698ac;
+	font-size: 14px;
+	line-height: 22px;
+}
+.foot-single-box .foot-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.foot-single-box .foot-icon a {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ddd;
+	margin: 0 5px;
+	display: grid;
+	place-items: center;
+	border-radius: 3px;
+}
+.foot-single-box .foot-icon a i {
+	font-size: 18px;
+	color: #fff;
+}
+.copy-right {
+	background-color: rgb(49,52,84);
+	margin-top: 40px;
+}
+.copy-right .copy {
+	padding: 35px 0;
+}
+.copy-right .copy p {
+	color: #929292;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
